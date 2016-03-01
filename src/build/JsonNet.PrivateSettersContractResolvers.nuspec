@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+    <metadata>
+        <id>JsonNet.PrivateSettersContractResolvers</id>
+        <title>JsonNet.PrivateSettersContractResolvers</title>
+        <version>$version$</version>
+        <authors>danielwertheim</authors>
+        <copyright>©Daniel Wertheim</copyright>
+        <summary>Custom contract resolver for Newtonsoft JSON.Net, supporting private setters.</summary>
+        <description>Provides custom contract resolvers that supports private setters when deserializing objects using Newtonsoft JSON.Net.</description>
+        <projectUrl>https://github.com/danielwertheim/jsonnet-privatesetterscontractresolvers</projectUrl>
+        <licenseUrl>https://github.com/danielwertheim/jsonnet-privatesetterscontractresolvers/master/LICENSE.txt</licenseUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <tags>json</tags>
+    </metadata>
+    <files>
+        <file src="JsonNet.PrivateSettersContractResolvers\JsonNet.PrivateSettersContractResolvers.dll" target="lib\net45" />
+    </files>
+</package>
