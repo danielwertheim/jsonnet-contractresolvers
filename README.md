@@ -6,7 +6,7 @@ First. I have nothing to do with [the awesome official](https://github.com/James
 Since the post is still getting traffic, I thought. Why not provide this as a source NuGet. So, here it is:
 
 ```
-Install-Package JsonNet.PrivateSetterContractResolvers.Source
+Install-Package JsonNet.PrivateSettersContractResolvers.Source
 ```
 
 It **installs a single file:** `PrivateSetterContractResolvers.cs`; into your project of choice. After that, you just consume it.
