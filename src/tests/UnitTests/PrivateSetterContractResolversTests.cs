@@ -1,13 +1,13 @@
 ﻿using FluentAssertions;
+using JsonNet.PrivateSettersContractResolvers;
 using Newtonsoft.Json;
-using NUnit.Framework;
+using Xunit;
 
-namespace JsonNet.PrivateSettersContractResolvers.UnitTests
+namespace UnitTests
 {
-    [TestFixture]
     public class PrivateSetterContractResolversTests
     {
-        [Test]
+        [Fact]
         public void PrivateSetterContractResolver_Should_deserialize_to_private_setters()
         {
             const string json = @"{""value"":""Some value""}";
@@ -21,7 +21,7 @@ namespace JsonNet.PrivateSettersContractResolvers.UnitTests
             model.Value.Should().Be("Some value");
         }
 
-        [Test]
+        [Fact]
         public void PrivateSetterCamelCasePropertyNamesContractResolver_Should_deserialize_to_private_setters()
         {
             const string json = @"{""value"":""Some value""}";
@@ -38,6 +38,6 @@ namespace JsonNet.PrivateSettersContractResolvers.UnitTests
         private class Model
         {
             public string Value { get; private set; }
-        }
+        }        
     }
 }

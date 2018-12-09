@@ -2,7 +2,6 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
-// ReSharper disable once CheckNamespace
 namespace JsonNet.PrivateSettersContractResolvers
 {
     public class PrivateSetterContractResolver : DefaultContractResolver
@@ -39,7 +38,7 @@ namespace JsonNet.PrivateSettersContractResolvers
         {
             var property = member as PropertyInfo;
 
-            return property?.GetSetMethod(true) != null;
+            return property?.SetMethod != null;
         }
     }
 }

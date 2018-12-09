@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonNet.PrivateSettersContractResolvers", "JsonNet.PrivateSettersContractResolvers\JsonNet.PrivateSettersContractResolvers.csproj", "{2C473E39-0929-4806-91EA-CF99E369D9DD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonNet.PrivateSettersContractResolvers", "projects\JsonNet.PrivateSettersContractResolvers\JsonNet.PrivateSettersContractResolvers.csproj", "{A4E44D9C-26D4-4160-96A7-C32ABA23BF20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonNet.PrivateSettersContractResolvers.UnitTests", "JsonNet.PrivateSettersContractResolvers.UnitTests\JsonNet.PrivateSettersContractResolvers.UnitTests.csproj", "{D353C93B-1A22-4C85-B76F-9FAD5934F3A9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "tests\UnitTests\UnitTests.csproj", "{EFCE1C86-3715-4BD8-BC09-262807D853BC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7D1F3C7F-6AC6-4618-BEA6-A995A39756DA}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E8C8AB70-7555-4D43-A2B5-480C36ED1F73}"
 	ProjectSection(SolutionItems) = preProject
-		GlobalAssemblyInfo.cs = GlobalAssemblyInfo.cs
+		Directory.Build.props = Directory.Build.props
 	EndProjectSection
 EndProject
 Global
@@ -18,16 +18,19 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2C473E39-0929-4806-91EA-CF99E369D9DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2C473E39-0929-4806-91EA-CF99E369D9DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2C473E39-0929-4806-91EA-CF99E369D9DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2C473E39-0929-4806-91EA-CF99E369D9DD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D353C93B-1A22-4C85-B76F-9FAD5934F3A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D353C93B-1A22-4C85-B76F-9FAD5934F3A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D353C93B-1A22-4C85-B76F-9FAD5934F3A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D353C93B-1A22-4C85-B76F-9FAD5934F3A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4E44D9C-26D4-4160-96A7-C32ABA23BF20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4E44D9C-26D4-4160-96A7-C32ABA23BF20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4E44D9C-26D4-4160-96A7-C32ABA23BF20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4E44D9C-26D4-4160-96A7-C32ABA23BF20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFCE1C86-3715-4BD8-BC09-262807D853BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFCE1C86-3715-4BD8-BC09-262807D853BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFCE1C86-3715-4BD8-BC09-262807D853BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFCE1C86-3715-4BD8-BC09-262807D853BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B10EE77-93E1-4CD1-AD91-8A72F5F10A8F}
 	EndGlobalSection
 EndGlobal
