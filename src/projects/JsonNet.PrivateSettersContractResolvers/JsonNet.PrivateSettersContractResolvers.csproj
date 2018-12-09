@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard1.3;netstandard2.0</TargetFrameworks>
+    <Title>JsonNet.PrivateSettersContractResolvers</Title>
+    <Description>Custom contract resolver for Newtonsoft JSON.Net, supporting private setters.</Description>
+    <PackageTags>newtonsoft json contractresolver</PackageTags>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/danielwertheim/jsonnet-privatesetterscontractresolvers/master/LICENSE.txt</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/danielwertheim/jsonnet-privatesetterscontractresolvers</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/danielwertheim/jsonnet-privatesetterscontractresolvers</RepositoryUrl>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+  </ItemGroup>
+
+</Project>
