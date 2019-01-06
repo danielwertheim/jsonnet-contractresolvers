@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonNet.PrivateSettersContractResolvers", "projects\JsonNet.PrivateSettersContractResolvers\JsonNet.PrivateSettersContractResolvers.csproj", "{A4E44D9C-26D4-4160-96A7-C32ABA23BF20}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonNet.ContractResolvers", "projects\JsonNet.ContractResolvers\JsonNet.ContractResolvers.csproj", "{A4E44D9C-26D4-4160-96A7-C32ABA23BF20}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "tests\UnitTests\UnitTests.csproj", "{EFCE1C86-3715-4BD8-BC09-262807D853BC}"
 EndProject

@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\projects\JsonNet.PrivateSettersContractResolvers\JsonNet.PrivateSettersContractResolvers.csproj" />
+    <ProjectReference Include="..\..\projects\JsonNet.ContractResolvers\JsonNet.ContractResolvers.csproj" />
   </ItemGroup>
 
 </Project>

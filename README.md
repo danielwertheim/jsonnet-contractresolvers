@@ -1,14 +1,25 @@
-# JsonNet.PrivateSetterContractResolvers
-First. I have nothing to do with [the awesome official](https://github.com/JamesNK/Newtonsoft.Json) library "Newtonsoft.Json". This is merely a tiny extension to it. In 2010 I was writing a NoSQL'ish document oriented provider over Microsoft SQL Server (SisoDB). While doing this I found the need for a *custom contract resolver* to Newtonsoft JSON.Net. One that supported **private setters** as well. I've [written](http://danielwertheim.se/json-net-private-setters) about the solutions to this problem before. Since it still seems to solve issues for people I have put up this GitHub repository and created a NuPkg available via NuGet for it as well.
+# JsonNet.ContractResolvers
+Tiny solution providing pre-made `ContractResolver` implementations for [Newtonsoft.Json](https://github.com/JamesNK/Newtonsoft.Json), resolvers that supports private property setters and private constructors.
+
+## Replaces eariler repos and NuGets
+Previous repo and NuGet distributions that this repo replaces are:
+
+- https://github.com/danielwertheim/jsonnet-privatesetterscontractresolvers
+- https://www.nuget.org/packages/JsonNet.PrivateSettersContractResolvers/
+- https://www.nuget.org/packages/JsonNet.PrivateSettersContractResolvers.Source/
+
+## Usage
 
 ```
-Install-Package JsonNet.PrivateSettersContractResolvers
+Install-Package JsonNet.ContractResolvers
 ```
 
 After that, you just consume it by creating an instance of either:
 
-- `PrivateSetterContractResolver`
-- `PrivateSetterCamelCasePropertyNamesContractResolver`
+- `PrivateSetterContractResolver` - extends `DefaultContractResolver` with support for private setters.
+- `PrivateSetterAndCtorContractResolver`- extends `DefaultContractResolver` with support for private setters and private constructors.
+- `PrivateSetterCamelCasePropertyNamesContractResolver` - extends `CamelCasePropertyNamesContractResolver` with support for private setters.
+- `PrivateSetterAndCtorCamelCasePropertyNamesContractResolver`- extends `CamelCasePropertyNamesContractResolver` with support for private setters and private constructors.
 
 which you then assign to the `JsonSerializerSettings.ContractResolver`.
 
