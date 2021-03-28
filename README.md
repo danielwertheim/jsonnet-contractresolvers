@@ -1,4 +1,8 @@
 # JsonNet.ContractResolvers
+[![NuGet](https://img.shields.io/nuget/v/JsonNet.ContractResolvers.svg?cacheSeconds=3600)](https://www.nuget.org/packages/JsonNet.ContractResolvers)
+[![License MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://choosealicense.com/licenses/mit/)
+[![Build Status](https://dev.azure.com/daniel-wertheim/os/_apis/build/status/jsonnet-contractresolvers-CI?branchName=master)](https://dev.azure.com/daniel-wertheim/os/_build/latest?definitionId=11&branchName=master)
+
 Tiny solution providing pre-made `ContractResolver` implementations for [Newtonsoft.Json](https://github.com/JamesNK/Newtonsoft.Json), resolvers that supports private property setters and private constructors.
 
 ## Replaces eariler repos and NuGets
