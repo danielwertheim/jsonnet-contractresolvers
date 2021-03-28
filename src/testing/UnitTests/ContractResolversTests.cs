@@ -3,7 +3,7 @@ using JsonNet.ContractResolvers;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using Xunit;
-
+// ReSharper disable ClassNeverInstantiated.Global
 // ReSharper disable UnusedAutoPropertyAccessor.Local
 // ReSharper disable AutoPropertyCanBeMadeGetOnly.Local
 // ReSharper disable InconsistentNaming
@@ -13,13 +13,13 @@ namespace UnitTests
 {
     public interface IModel
     {
-        string SomeStringValue { get; }
+        string? SomeStringValue { get; }
         int SomeIntValue { get; }
     }
 
     public class ModelWithPublicCTor : IModel
     {
-        public string SomeStringValue { get; private set; }
+        public string? SomeStringValue { get; private set; }
         public int SomeIntValue { get; private set; }
     }
 
@@ -56,7 +56,7 @@ namespace UnitTests
             _resolver = resolver;
         }
 
-        protected TModel Deserialize(string json) =>
+        protected TModel? Deserialize(string json) =>
             JsonConvert.DeserializeObject<TModel>(json, new JsonSerializerSettings
             {
                 ContractResolver = _resolver
@@ -67,7 +67,7 @@ namespace UnitTests
         {
             const string json = @"{""SomeStringValue"":""Some value"", ""SomeIntValue"": 42}";
 
-            var model = Deserialize(json);
+            var model = Deserialize(json)!;
 
             model.SomeStringValue.Should().Be("Some value");
             model.SomeIntValue.Should().Be(42);
@@ -78,7 +78,7 @@ namespace UnitTests
         {
             const string json = @"{""someStringValue"":""Some value"", ""someIntValue"": 42}";
 
-            var model = Deserialize(json);
+            var model = Deserialize(json)!;
 
             model.SomeStringValue.Should().Be("Some value");
             model.SomeIntValue.Should().Be(42);
